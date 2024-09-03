@@ -1,0 +1,167 @@
+{
+    "profile": {
+      "uuid": "01eb5c69-4a9c-46ae-a5e5-c5a244644d1d",
+      "metadata": {
+        "title": "Low-Risk - Level 1",
+        "last-modified": "2024-05-21T01:03:24.667804+08:00",
+        "version": "2024.05.30-2",
+        "oscal-version": "1.1.2",
+        "props": [
+          {
+            "name": "label",
+            "value": "low-risk-level-1"
+          },
+          {
+            "name": "risk",
+            "value": "low-risk"
+          },
+          {
+            "name": "level",
+            "value": "1"
+          }
+        ],
+        "roles": [
+          {
+            "id": "creator",
+            "title": "Creator"
+          },
+          {
+            "id": "contact",
+            "title": "Contact"
+          }
+        ],
+        "parties": [
+          {
+            "uuid": "e738ab7c-ed26-4fe6-a1e7-f485265d50cc",
+            "type": "organization",
+            "name": "IM8-reform Executive Committee",
+            "email-addresses": []
+          }
+        ],
+        "responsible-parties": [
+          {
+            "role-id": "creator",
+            "party-uuids": [
+              "e738ab7c-ed26-4fe6-a1e7-f485265d50cc"
+            ]
+          },
+          {
+            "role-id": "contact",
+            "party-uuids": [
+              "e738ab7c-ed26-4fe6-a1e7-f485265d50cc"
+            ]
+          }
+        ],
+        "remarks": "The Level 1 baseline includes controls that support a standard secure product. Agencies can seek approval from the agency's ICT and Digitalisation Steering Committee (IDSC) or delegated approval authority such as the agency CIO or CISO for deviations from controls in this baseline in any default system security plan. Deviations must be documented in a custom System Security Plan with explanations for each deviation and submitted centrally. If a control is not applicable to the system, the agency does not need to seek IDSC approval but must provide explanation for why it is not applicable."
+      },
+      "imports": [
+        {
+          "href": "trestle://profiles/low-risk-level-0.json",
+          "include-all": {}
+        },
+        {
+          "href": "trestle://catalogs/im8-reform.json",
+          "include-controls": [
+            {
+              "with-ids": [
+                "ac-1",
+                "ac-2",
+                "ac-3",
+                "ac-4",
+                "ac-5",
+                "ac-6",
+                "ac-7",
+                "ac-8",
+                "ac-9",
+                "ac-12",
+                "as-1",
+                "as-2",
+                "as-3",
+                "as-4",
+                "as-5",
+                "as-6",
+                "as-7",
+                "as-8",
+                "as-9",
+                "as-11",
+                "br-1",
+                "br-3",
+                "cs-3",
+                "cs-4",
+                "cs-7",
+                "cs-9",
+                "cs-10",
+                "dc-1",
+                "dc-2",
+                "dp-1",
+                "dp-2",
+                "dp-3",
+                "dp-4",
+                "dp-5",
+                "is-1",
+                "is-2",
+                "is-3",
+                "is-4",
+                "is-5",
+                "is-6",
+                "is-7",
+                "is-9",
+                "is-10",
+                "lm-1",
+                "lm-2",
+                "lm-3",
+                "lm-4",
+                "lm-6",
+                "lm-8",
+                "lm-7",
+                "lm-9",
+                "lm-10",
+                "ns-1",
+                "ns-2",
+                "ns-3",
+                "ns-4",
+                "ns-5",
+                "ns-6",
+                "ns-7",
+                "ns-8",
+                "ns-9",
+                "ns-10",
+                "pm-1",
+                "pm-2",
+                "pm-6",
+                "pm-7",
+                "pm-8",
+                "sc-1",
+                "sc-3",
+                "sc-4",
+                "sc-5",
+                "sc-6",
+                "sd-1",
+                "sd-2",
+                "sd-4",
+                "sd-5",
+                "sd-6",
+                "sd-7",
+                "sd-8",
+                "st-1",
+                "st-2",
+                "st-3",
+                "st-4",
+                "st-5"
+              ]
+            }
+          ]
+        }
+      ],
+      "merge": {
+        "combine": {
+          "method": "merge"
+        },
+        "as-is": true
+      },
+      "modify": {
+        "set-parameters": [],
+        "alters": []
+      }
+    }
+  }

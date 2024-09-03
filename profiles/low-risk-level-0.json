@@ -1,0 +1,85 @@
+{
+    "profile": {
+      "uuid": "61b22495-b212-4ac7-b961-07cc508486a3",
+      "metadata": {
+        "title": "Low-Risk - Level 0",
+        "last-modified": "2024-05-21T01:03:24.667804+08:00",
+        "version": "2024.05.30-2",
+        "oscal-version": "1.1.2",
+        "props": [
+          {
+            "name": "label",
+            "value": "low-risk-level-0"
+          },
+          {
+            "name": "risk",
+            "value": "low-risk"
+          },
+          {
+            "name": "level",
+            "value": "0"
+          }
+        ],
+        "roles": [
+          {
+            "id": "creator",
+            "title": "Creator"
+          },
+          {
+            "id": "contact",
+            "title": "Contact"
+          }
+        ],
+        "parties": [
+          {
+            "uuid": "e738ab7c-ed26-4fe6-a1e7-f485265d50cc",
+            "type": "organization",
+            "name": "IM8-reform Executive Committee",
+            "email-addresses": []
+          }
+        ],
+        "responsible-parties": [
+          {
+            "role-id": "creator",
+            "party-uuids": [
+              "e738ab7c-ed26-4fe6-a1e7-f485265d50cc"
+            ]
+          },
+          {
+            "role-id": "contact",
+            "party-uuids": [
+              "e738ab7c-ed26-4fe6-a1e7-f485265d50cc"
+            ]
+          }
+        ],
+        "remarks": "The Level 0 baseline includes controls that provide central oversight of systems' security. Agencies cannot deviate from controls in this baseline."
+      },
+      "imports": [
+        {
+          "href": "trestle://catalogs/im8-reform.json",
+          "include-controls": [
+            {
+              "with-ids": [
+                "pm-3",
+                "pm-4",
+                "pm-5",
+                "is-11",
+                "is-14",
+                "lm-12"
+              ]
+            }
+          ]
+        }
+      ],
+      "merge": {
+        "combine": {
+          "method": "merge"
+        },
+        "as-is": true
+      },
+      "modify": {
+        "set-parameters": [],
+        "alters": []
+      }
+    }
+  }
